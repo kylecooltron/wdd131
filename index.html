@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=\, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Kyle Coulon's WDD 131 – Dynamic Web Fundamentals course repository landing page."
+        />
+        <title>WDD 131 – Dynamic Web Fundamentals – Kyle Coulon</title>
+        <link rel="stylesheet" href="./styles/base.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Javascript  -->
+        <script src="./scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="https://www.linkedin.com/in/kyle-coulon/" title="LinkedIn">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://byupw.instructure.com/" title="Canvas">Canvas</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng&id=p13#p13"
+                            title="Scripture"
+                            >Scripture</a
+                        >
+                    </li>
+                    <li><a href="#" title="Final Project">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Kyle Coulon</h1>
+
+            <section class="card">
+                <h2>About Me</h2>
+
+                <div id="aboutMeGrid">
+                    <div class="card-area bio-and-picture">
+                        <p>
+                            My name is <b>Kyle Coulon</b>. I grew up in Utah. I currently work as a backend engineer. I
+                            enjoy backpacking, fly fishing, and game development. I also love spending time with my wife
+                            and son.
+                        </p>
+                        <img src="./images/kyle-fishing-profile.jpg" alt="Image of Kyle Coulon" />
+                    </div>
+
+                    <div class="card-area location">
+                        <h3>Utah, United States of America</h3>
+                        <figure>
+                            <img
+                                src="./images/united-states-flag.jpg"
+                                alt="Official flag of the United States of America"
+                            />
+                            <figcaption>American Flag</figcaption>
+                        </figure>
+
+                        <p>
+                            Utah is home to the Bonneville cutthroat trout, <i>Oncorhynchus virginalis utah</i>.
+                            According to Wikipedia: ..."subspecies of Rocky Mountain Cutthroat Trout native to
+                            tributaries of the Great Salt Lake and Sevier Lake. Most of the fish's current and historic
+                            range is in Utah, but they are also found in Idaho, Wyoming, and Nevada. This is one of 14
+                            or so recognized subspecies of cutthroat trout native to the western United States."
+                        </p>
+                        <a
+                            href="https://en.wikipedia.org/wiki/Bonneville_cutthroat_trout"
+                            title="Wikipedia Bonneville Trout"
+                            >Wikepedia</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <div class="card-area">
+                    <ul>
+                        <li>
+                            <a href="https://www.w3schools.com/" title="W3Schools">W3Schools</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/" title="W3Schools">Some other</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                <span id="currentyear"></span>
+                Kyle Coulon - Utah
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
