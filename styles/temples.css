@@ -82,7 +82,7 @@ nav a:hover {
 }
 
 .hamburger {
-    display: none;
+    display: block;
     cursor: pointer;
     padding: 0.75rem;
 }
@@ -106,8 +106,5 @@ nav a:hover {
     /* left: 0; */
 }
 .navigation.active {
-    display: block;
-}
-.hamburger {
     display: block;
 }
