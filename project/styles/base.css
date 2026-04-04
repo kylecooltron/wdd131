@@ -33,6 +33,11 @@
 #font-example-roboto {
     font-family: "Roboto", sans-serif;
 }
+#drawio {
+    max-width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+}
 
 /* Actual styles */
 header,
