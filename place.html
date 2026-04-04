@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kyle Coulon" />
+        <meta name="description" content="Kyle Coulon's WDD 131 – Place I've Been Assignment for Week 3" />
+        <title>WDD 131 – Place I've Been – Kyle Coulon</title>
+        <link rel="stylesheet" href="./styles/place.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="./scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Olympic National Park</h1>
+        </header>
+
+        <main>
+            <section class="hero">
+                <picture class="hero-background">
+                    <source media="(min-width: 800px)" srcset="images/place/olympic-dark-mountain.jpg" />
+                    <img src="images/place/olympic-moss.jpg" alt="Olympic National Park coastal rainforest" />
+                </picture>
+                <div class="info-card card">
+                    <h3>Data</h3>
+                    <dl class="data-list">
+                        <div>
+                            <dt>Location</dt>
+                            <dd>Washington, USA</dd>
+                        </div>
+                        <div>
+                            <dt>Elevation</dt>
+                            <dd>1,500 ft</dd>
+                        </div>
+                        <div>
+                            <dt>Biome</dt>
+                            <dd>Temperate rainforest</dd>
+                        </div>
+                        <div>
+                            <dt>Established</dt>
+                            <dd>1938</dd>
+                        </div>
+                        <div>
+                            <dt>Visitors/year</dt>
+                            <dd>~3.1 million</dd>
+                        </div>
+                    </dl>
+                </div>
+                <article class="weather-card card" aria-labelledby="weather-heading">
+                    <h3 id="weather-heading">Weather</h3>
+                    <img
+                        class="weather-icon"
+                        src="images/place/weather-svg.svg"
+                        alt="Weather icon"
+                        style="width: 60px; height: auto"
+                    />
+                    <dl class="data-list">
+                        <div>
+                            <dt>Conditions</dt>
+                            <dd><span id="conditions">Partly Cloudy</span></dd>
+                        </div>
+                        <div>
+                            <dt>Temperature</dt>
+                            <dd><span id="temperature">46</span>°F</dd>
+                        </div>
+                        <div>
+                            <dt>Wind speed</dt>
+                            <dd><span id="windspeed">10</span> mph</dd>
+                        </div>
+                        <div>
+                            <dt>Humidity</dt>
+                            <dd>78%</dd>
+                        </div>
+                        <div>
+                            <dt>Precipitation</dt>
+                            <dd>30%</dd>
+                        </div>
+                        <div>
+                            <dt>Wind Chill</dt>
+                            <dd><span id="windchill">Loading...</span></dd>
+                        </div>
+                    </dl>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                <span id="currentyear"></span>
+                Kyle Coulon - Utah
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

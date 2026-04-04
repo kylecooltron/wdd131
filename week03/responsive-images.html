@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kyle Coulon" />
+        <meta name="description" content="Kyle Coulon's WDD 131 – Dynamic Web Fundamentals week 3 Responsive Images." />
+        <title>WDD 131 – Responsive Images – Kyle Coulon</title>
+        <link rel="stylesheet" href="./styles/responsive-images.css" />
+    </head>
+    <body>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="./images/hero-large.jpg" />
+                    <source media="(min-width: 500px)" srcset="./images/hero-medium.jpg" />
+                    <img src="./images/hero-small.jpg" alt="A severely cropped photo of the Payson Utah Temple" width="1500" height="750"/>
+                </picture>
+            </div>
+        </main>
+    </body>
+</html>

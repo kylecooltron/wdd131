@@ -1,0 +1,143 @@
+.weather-icon {
+    display: block;
+    margin: 0.5em auto 1em auto;
+    width: 60px;
+    height: auto;
+}
+
+@media (min-width: 800px) {
+    .weather-icon {
+        display: none;
+    }
+    #weather-heading::after {
+        content: " ⛅";
+        font-size: 2rem;
+        vertical-align: middle;
+        margin-left: 0.5em;
+        line-height: 1;
+    }
+}
+html {
+    --content-max-width: 1080px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-background {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-background img,
+.hero-background source {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+@media (min-width: 800px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .hero-background {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .info-card {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.95);
+        margin: 1rem;
+    }
+
+    .weather-card {
+        grid-column: 3;
+        grid-row: 1;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.95);
+        margin: 1rem;
+    }
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card h3 {
+    background-color: rgb(193, 204, 178);
+    padding: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+}
+
+.data-list div {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.25em;
+}
+
+.data-list dt {
+    font-weight: bold;
+    margin-right: 0.5em;
+    min-width: 7em;
+    text-align: left;
+}
+
+.data-list dd {
+    margin: 0;
+    text-align: left;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    max-width: var(--content-max-width);
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    min-width: 400px;
+    color: white;
+    padding: 1rem 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: var(--content-max-width);
+}
+
+main {
+    min-width: 400px;
+    margin: 0 auto;
+    max-width: var(--content-max-width);
+}
