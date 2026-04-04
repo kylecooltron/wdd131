@@ -1,0 +1,118 @@
+/* Limit temple card images to 400x250px */
+.temple-img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #fdcbb2;
+}
+
+main,
+footer {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.temple-card {
+    background-color: rgb(252, 255, 208);
+    border: 5px solid #d7cab2;
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    padding: 1rem;
+    color: #360e0e;
+}
+
+#temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #ffad84;
+    text-align: center;
+}
+
+header {
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #ffad84;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+nav {
+    margin: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ffc175;
+    align-items: center;
+}
+nav li {
+    flex: 1 1 auto;
+    list-style: none;
+}
+nav a {
+    font-weight: 700;
+    display: block;
+    color: #360e0e;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 18, 18);
+    color: #4a5a18;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0.75rem;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ffffff;
+}
+.hamburger:hover {
+    background-color: rgb(141, 72, 22);
+}
+
+.navigation {
+    display: none;
+    /* flex-direction: column;
+    width: 100%; */
+    /* position: absolute; */
+    /* top: 60px; */
+    /* left: 0; */
+}
+.navigation.active {
+    display: block;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kyle Coulon" />
+        <meta name="description" content="Kyle Coulon's WDD 131 – Responsive Temple Album Assignment for Week 2" />
+        <title>WDD 131 – Temple Album – Kyle Coulon</title>
+        <link rel="stylesheet" href="./styles/filtered-temples.css" />
+        <link rel="stylesheet" href="./styles/filtered-temples-large.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Javascript  -->
+        <script src="./scripts/filtered-temples.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h2>Temple Album</h2>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navigation">
+                    <li>
+                        <a id="nav-home" href="#" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a id="nav-old" href="#" title="Old">Old</a>
+                    </li>
+                    <li>
+                        <a id="nav-new" href="#" title="New">New</a>
+                    </li>
+                    <li>
+                        <a id="nav-large" href="#" title="Large">Large</a>
+                    </li>
+                    <li>
+                        <a id="nav-small" href="#" title="Small">Small</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Home</h1>
+
+            <div id="temple-container"></div>
+        </main>
+
+        <footer>
+            <p>
+                <span id="currentyear"></span>
+                Kyle Coulon - Utah
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
