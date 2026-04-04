@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-green: #9ce9c9;
+    --color-darkgreen: #285943;
+    --color-lightbg: #f4f9f4;
+}
+
+/* Examples */
+.color-example {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+#color-example-green {
+    background-color: var(--color-green);
+    color: #222;
+}
+#color-example-darkgreen {
+    background-color: var(--color-darkgreen);
+    color: white;
+}
+#color-example-lightbg {
+    background-color: var(--color-lightbg);
+}
+#font-example-pt-serif {
+    font-family: "PT Serif", serif;
+}
+#font-example-roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Actual styles */
+header,
+footer {
+    background-color: var(--color-darkgreen);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: var(--color-green);
+    padding: 0.25rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PT Serif", serif;
+}
+
+body {
+    background-color: var(--color-lightbg);
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    margin: 1.5rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+p {
+    margin-left: 1.5rem;
+}
+ul {
+    margin-left: 2rem;
+}
+
+footer {
+    padding: 0.5rem;
+}
