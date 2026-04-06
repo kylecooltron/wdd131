@@ -1,16 +1,79 @@
-body { font-family: sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-main { max-width: 400px; margin: 2rem auto; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
-h1 { font-size: 1.5rem; margin-bottom: 1rem; }
-form label, form legend { display: block; margin-top: 1rem; font-weight: bold; }
-form input, form select, form textarea { width: 100%; margin-top: 0.25rem; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
-fieldset { border: none; padding: 0; margin: 1rem 0 0 0; }
-#rating-stars { display: flex; flex-direction: row-reverse; justify-content: flex-end; gap: 0.25rem; }
-#rating-stars input { display: none; }
-#rating-stars label { font-size: 1.5rem; color: #ccc; cursor: pointer; }
-#rating-stars input:checked ~ label, #rating-stars label:hover, #rating-stars label:hover ~ label { color: #f5b301; }
-input[type="submit"] { background: #0074d9; color: #fff; border: none; margin-top: 1.5rem; cursor: pointer; font-size: 1rem; }
-input[type="submit"]:hover { background: #005fa3; }
-footer { text-align: center; margin: 2rem 0 0 0; color: #888; font-size: 0.9rem; }
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+main {
+    max-width: 400px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+form label,
+form legend {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+form input,
+form select,
+form textarea {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+#rating-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.25rem;
+}
+#rating-stars input {
+    display: none;
+}
+#rating-stars label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+#rating-stars input:checked ~ label,
+#rating-stars label:hover,
+#rating-stars label:hover ~ label {
+    color: #f5b301;
+}
+input[type="submit"] {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+input[type="submit"]:hover {
+    background: #005fa3;
+}
+footer {
+    text-align: center;
+    margin: 2rem 0 0 0;
+    color: #888;
+    font-size: 0.9rem;
+}
 @media (min-width: 600px) {
-  main { max-width: 600px; }
+    main {
+        max-width: 600px;
+    }
 }
