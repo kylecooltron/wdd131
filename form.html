@@ -3,57 +3,89 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Product Review Form</title>
-        <link rel="stylesheet" href="styles/form.css" />
+        <meta name="author" content="Kyle Coulon" />
+        <meta
+            name="description"
+            content="Kyle Coulon's WDD 131 – Dynamic Web Fundamentals Product Review Form Assignment."
+        />
+        <title>WDD 131 – Product Review Form – Kyle Coulon</title>
+        <link rel="stylesheet" href="./styles/form.css" />
+
+        <!-- Javascript  -->
+        <script src="./scripts/form.js" defer></script>
     </head>
     <body>
         <main>
             <h1>Product Review Form</h1>
             <form method="get" action="review.html">
-                <label for="product">Product Name<span>*</span></label>
-                <select id="product" name="product" required></select>
+                <fieldset>
+                    <label for="product">Product Name*</label>
+                    <select id="product" name="product" required>
+                        <option value="" selected disabled>Choose a Product...</option>
+                    </select>
+                </fieldset>
 
                 <fieldset>
-                    <legend>Overall Rating<span>*</span></legend>
+                    <legend>Overall Rating*</legend>
                     <div id="rating-stars">
                         <input type="radio" id="star5" name="rating" value="5" required />
-                        <label for="star5">&#9733;</label>
-                        <input type="radio" id="star4" name="rating" value="4" />
-                        <label for="star4">&#9733;</label>
-                        <input type="radio" id="star3" name="rating" value="3" />
-                        <label for="star3">&#9733;</label>
-                        <input type="radio" id="star2" name="rating" value="2" />
-                        <label for="star2">&#9733;</label>
-                        <input type="radio" id="star1" name="rating" value="1" />
-                        <label for="star1">&#9733;</label>
+                        <label for="star5">&star;</label>
+                        <input type="radio" id="star4" name="rating" value="4" required />
+                        <label for="star4">&star;</label>
+                        <input type="radio" id="star3" name="rating" value="3" required />
+                        <label for="star3">&star;</label>
+                        <input type="radio" id="star2" name="rating" value="2" required />
+                        <label for="star2">&star;</label>
+                        <input type="radio" id="star1" name="rating" value="1" required />
+                        <label for="star1">&star;</label>
                     </div>
                 </fieldset>
 
-                <label for="install-date">Date of Installation<span>*</span></label>
-                <input type="date" id="install-date" name="install-date" required />
-
                 <fieldset>
-                    <legend>Useful Features</legend>
-                    <input type="checkbox" id="feature1" name="features" value="feature1" />
-                    <label for="feature1">Feature 1</label>
-                    <input type="checkbox" id="feature2" name="features" value="feature2" />
-                    <label for="feature2">Feature 2</label>
-                    <input type="checkbox" id="feature3" name="features" value="feature3" />
-                    <label for="feature3">Feature 3</label>
+                    <label>
+                        Date of Installation*
+                        <input type="date" id="install-date" name="install-date" required />
+                    </label>
                 </fieldset>
 
-                <label for="review">Written Review</label>
-                <textarea id="review" name="review" rows="4"></textarea>
+                <fieldset>
+                    <legend>Which features did you find useful in the product?</legend>
+                    <legend><em>(Check all that apply)</em></legend>
+                    <label for="feature1">
+                        Feature 1
+                        <input type="checkbox" id="feature1" name="features" value="feature1"
+                    /></label>
 
-                <label for="username">User Name</label>
-                <input type="text" id="username" name="username" />
+                    <label for="feature2">
+                        Feature 2
+                        <input type="checkbox" id="feature2" name="features" value="feature2"
+                    /></label>
 
-                <input type="submit" value="Submit Review" />
+                    <label for="feature3">
+                        Feature 3
+                        <input type="checkbox" id="feature3" name="features" value="feature3"
+                    /></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="review">Written Review</label>
+                    <textarea id="review" name="review"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" name="username" />
+                </fieldset>
+
+                <input type="submit" value="Post Review" />
             </form>
         </main>
         <footer>
-            <p>&copy; 2026 Product Reviews. All rights reserved.</p>
+            <p>
+                <span id="currentyear"></span>
+                Kyle Coulon - Utah
+            </p>
+            <p id="lastModified"></p>
         </footer>
-        <script src="scripts/form.js"></script>
     </body>
 </html>
