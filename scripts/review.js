@@ -1,7 +1,11 @@
-// Increment and display review count
-window.addEventListener("DOMContentLoaded", function () {
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("submitted") === "true") {
     let count = Number(localStorage.getItem("reviewCount")) || 0;
-    count++;
+    count += 1;
     localStorage.setItem("reviewCount", count);
-    document.getElementById("review-count").textContent = count;
-});
+
+    window.history.replaceState({}, document.title, window.location.pathname);
+}
+
+document.getElementById("review-count").textContent = localStorage.getItem("reviewCount") || 0;

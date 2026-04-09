@@ -10,7 +10,6 @@ main {
     background: #fff;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 8px #0001;
     text-align: center;
 }
 h1 {
@@ -20,14 +19,46 @@ h1 {
 p {
     font-size: 1.1rem;
 }
-footer {
-    text-align: center;
-    margin: 2rem 0 0 0;
-    color: #888;
-    font-size: 0.9rem;
-}
+
 @media (min-width: 600px) {
     main {
         max-width: 600px;
     }
+}
+
+
+
+
+header {
+    grid-column: 1 / 4;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    align-items: center;
+}
+nav li {
+    flex: 1 1 auto;
+    list-style: none;
+}
+nav a {
+    font-weight: 700;
+    display: block;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    color: #48f9ff;
+}
+
+footer {
+    grid-column: 1 / 4;
+    background: rgb(25, 29, 39);
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
 }

@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -5,20 +10,52 @@ body {
     background: #f9f9f9;
 }
 
-footer {
+header {
     grid-column: 1 / 4;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    align-items: center;
+}
+nav li {
+    flex: 1 1 auto;
+    list-style: none;
+}
+nav a {
+    font-weight: 700;
+    display: block;
+    color: #ffffff;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    color: #48f9ff;
+}
+
+#course-title {
+    display: block;
     background: rgb(25, 29, 39);
     color: #ffffff;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
 main {
-    max-width: 600px;
+    max-width: 400px;
     margin: 2rem auto;
     background: #fff;
     padding: 1.5rem;
     border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+    main {
+        max-width: 600px;
+    }
 }
 
 input,
@@ -38,7 +75,17 @@ fieldset {
 }
 
 legend {
+    margin-bottom: 0.5em;
+}
+
+.legend-note {
     margin-bottom: 1em;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
 }
 
 #rating-stars {
@@ -75,8 +122,9 @@ input[type="submit"] {
 }
 
 footer {
+    grid-column: 1 / 4;
+    background: rgb(25, 29, 39);
+    color: #ffffff;
+    padding: 2rem;
     text-align: center;
-    margin: 2rem 0 0 0;
-    color: #888;
-    font-size: 0.9rem;
 }

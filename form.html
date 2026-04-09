@@ -15,13 +15,35 @@
         <script src="./scripts/form.js" defer></script>
     </head>
     <body>
+        <header>
+            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="https://www.linkedin.com/in/kyle-coulon/" title="LinkedIn">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://byupw.instructure.com/" title="Canvas">Canvas</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng&id=p13#p13"
+                            title="Scripture"
+                            >Scripture</a
+                        >
+                    </li>
+                    <li><a href="#" title="Final Project">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
             <h1>Product Review Form</h1>
             <form method="get" action="review.html">
                 <fieldset>
                     <label for="product">Product Name*</label>
                     <select id="product" name="product" required>
-                        <option value="" selected disabled>Choose a Product...</option>
+                        <option value="" selected disabled>Select a Product ...</option>
                     </select>
                 </fieldset>
 
@@ -42,7 +64,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <label>
+                    <label for="install-date">
                         Date of Installation*
                         <input type="date" id="install-date" name="install-date" required />
                     </label>
@@ -50,20 +72,25 @@
 
                 <fieldset>
                     <legend>Which features did you find useful in the product?</legend>
-                    <legend><em>(Check all that apply)</em></legend>
-                    <label for="feature1">
+                    <p class="legend-note"><em>(Check all that apply)</em></p>
+                    <label for="feature1" class="checkbox-label">
                         Feature 1
                         <input type="checkbox" id="feature1" name="features" value="feature1"
                     /></label>
 
-                    <label for="feature2">
+                    <label for="feature2" class="checkbox-label">
                         Feature 2
                         <input type="checkbox" id="feature2" name="features" value="feature2"
                     /></label>
 
-                    <label for="feature3">
+                    <label for="feature3" class="checkbox-label">
                         Feature 3
                         <input type="checkbox" id="feature3" name="features" value="feature3"
+                    /></label>
+
+                    <label for="feature4" class="checkbox-label">
+                        Feature 4
+                        <input type="checkbox" id="feature4" name="features" value="feature4"
                     /></label>
                 </fieldset>
 
@@ -77,6 +104,7 @@
                     <input type="text" id="username" name="username" />
                 </fieldset>
 
+                <input type="hidden" name="submitted" value="true" />
                 <input type="submit" value="Post Review" />
             </form>
         </main>
