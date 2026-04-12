@@ -286,6 +286,13 @@ legend {
     display: block;
 }
 
+.references-link {
+    color: white;
+}
+.references-link:visited {
+    color: white;
+}
+
 /* media query */
 @media (min-width: 800px) {
     #feed-section {
