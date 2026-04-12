@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fly Fishing Spot Explorer</title>
+        <meta name="author" content="Kyle Coulon" />
+        <meta
+            name="description"
+            content="Kyle Coulon's WDD 131 – Dynamic Web Fundamentals course - Fly Fishing Spot Explorer."
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/home.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=PT+Serif:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Javascript  -->
+        <script src="./scripts/base.js" defer></script>
+        <script src="./scripts/quote-of-the-day.js" defer></script>
+        <script src="./scripts/feed.js" defer></script>
+        <script src="./scripts/home.js" defer></script>
+        <script src="./scripts/weather.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Fly Fishing Spot Explorer</h1>
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="#" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./map.html" title="Map">Map</a>
+                    </li>
+                    <li>
+                        <a href="./record.html" title="Record">Catch Record</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Home</h2>
+                <p id="welcome-message">Welcome</p>
+            </section>
+
+            <section id="quote-of-the-day-container">
+                <div id="quote-span">
+                    <span id="large-quote-symbol">“</span><span id="quote-of-the-day">Loading...</span>
+                </div>
+                <div id="quote-title-and-author">
+                    <div class="float-right-paragraph">Quote of the Day</div>
+                    <div id="quote-author"></div>
+                </div>
+            </section>
+
+            <section id="weather-section">
+                <h2>🌤️Weather</h2>
+
+                <dl class="data-list">
+                    <div>
+                        <dt>Conditions</dt>
+                        <dd><span id="conditions">N/A</span></dd>
+                    </div>
+                    <div>
+                        <dt>Temperature</dt>
+                        <dd><span id="temperature">--</span>°F</dd>
+                    </div>
+                    <div>
+                        <dt>Wind speed</dt>
+                        <dd><span id="windspeed">--</span> mph</dd>
+                    </div>
+                    <div>
+                        <dt>Humidity</dt>
+                        <dd><span id="humidity">--</span></dd>
+                    </div>
+                    <div>
+                        <dt>Precipitation</dt>
+                        <dd><span id="precipitation">--</span></dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section id="feed-section">
+                <h2>Your Feed</h2>
+                <div id="feed-container">
+                    <p>Loading..</p>
+                </div>
+                <button id="feed-load-more-button" class="action-button">Load More</button>
+            </section>
+        </main>
+        <footer>
+            <p>
+                <span id="currentyear"></span>
+                Kyle Coulon - Utah
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

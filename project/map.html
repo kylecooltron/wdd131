@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fly Fishing Spot Explorer</title>
+        <meta name="author" content="Kyle Coulon" />
+        <meta
+            name="description"
+            content="Kyle Coulon's WDD 131 – Dynamic Web Fundamentals course - Fly Fishing Spot Explorer - Interactive Map."
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./styles/styles.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=PT+Serif:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Map Service -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" defer />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+
+        <!-- Javascript  -->
+        <script src="./scripts/base.js" defer></script>
+        <script type="module" src="./scripts/map.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Fly Fishing Spot Explorer</h1>
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="./index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Map">Map</a>
+                    </li>
+                    <li>
+                        <a href="./record.html" title="Record">Catch Record</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="map-section">
+                <p class="margin-below-add">📍<b id="right-click-message">Right click</b> to add new locations!</p>
+                <div id="map"></div>
+            </section>
+
+            <div id="map-menu">
+                <input type="text" id="save-location-input" placeholder="Spot Name" />
+                <button id="add-marker" class="action-button">Save Location</button>
+            </div>
+        </main>
+        <footer>
+            <p>
+                <span id="currentyear"></span>
+                Kyle Coulon - Utah
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
