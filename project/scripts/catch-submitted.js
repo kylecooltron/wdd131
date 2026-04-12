@@ -4,8 +4,6 @@ const params = new URLSearchParams(window.location.search);
 
 if (params.get("submitted") === "true") {
     const catchData = Object.fromEntries([...params.entries()].filter(([key]) => key !== "submitted"));
-    console.log("Catch Data:", catchData);
-
     // const feedDescription = `Species: ${catchData.species}<br>
     // Length: ${catchData["length"]}<br>
     // Location: ${catchData.location}<br>
