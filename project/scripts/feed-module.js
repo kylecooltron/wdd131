@@ -6,6 +6,6 @@ export const saveFeedItem = (title, description) => {
     };
     let feedItems = localStorage.getItem("feedItems");
     feedItems = feedItems ? JSON.parse(feedItems) : [];
-    feedItems.push(item);
+    feedItems.unshift(item);
     localStorage.setItem("feedItems", JSON.stringify(feedItems));
 };

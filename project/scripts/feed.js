@@ -1,6 +1,10 @@
 const feedContainer = document.getElementById("feed-container");
+const loadMoreBtn = document.getElementById("feed-load-more-button");
 
-const feedItems = localStorage.getItem("feedItems");
+const feedItems = JSON.parse(localStorage.getItem("feedItems"));
+const feedItemsCount = feedItems ? feedItems.length : 0;
+let loadedFeedItems = 0;
+const pageSize = 5;
 
 const addFeedItem = (item) => {
     const feedItem = document.createElement("div");
@@ -20,16 +24,33 @@ const addFeedItem = (item) => {
     feedItem.appendChild(date);
     feedItem.appendChild(description);
 
-    feedContainer.prepend(feedItem);
+    feedContainer.appendChild(feedItem);
 };
 
 if (feedItems) {
     feedContainer.innerHTML = "";
-    for (const item of JSON.parse(feedItems)) {
-        addFeedItem(item);
+    for (let i = 0; i < Math.min(pageSize, feedItems.length); i++) {
+        addFeedItem(feedItems[i]);
+        loadedFeedItems += 1;
+    }
+
+    if (loadedFeedItems >= feedItemsCount) {
+        loadMoreBtn.style.display = "none";
     }
 } else {
     setTimeout(() => {
         feedContainer.innerHTML = "<p>Your feed is empty</p>";
     }, 2000);
 }
+
+loadMoreBtn.addEventListener("click", () => {
+    const limit = Math.min(loadedFeedItems + pageSize, feedItemsCount);
+    for (let i = loadedFeedItems; i < limit; i++) {
+        addFeedItem(feedItems[i]);
+        loadedFeedItems += 1;
+    }
+
+    if (loadedFeedItems >= feedItemsCount) {
+        loadMoreBtn.style.display = "none";
+    }
+});

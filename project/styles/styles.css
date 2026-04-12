@@ -308,7 +308,11 @@ legend {
     #feed-container {
         background-color: white;
         padding-top: 1rem;
-        min-height: 50%;
+        min-height: 35%;
+
+        max-height: 340px;
+        overflow-y: auto;
+        padding-right: 8px;
     }
 
     form {
